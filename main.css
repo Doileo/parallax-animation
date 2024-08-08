@@ -1,0 +1,133 @@
+/* Basic Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Parallax Section Styles */
+.parallax {
+  position: relative;
+  height: 100vh;
+  background-image: url("assets/gradient.jpg"); /* Single image for parallax effect */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Color Overlays for Parallax Sections */
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Default overlay */
+  z-index: 1;
+}
+
+.parallax.section1::before {
+  background: rgba(140, 109, 126, 0.5); /* Light Taupe overlay */
+}
+
+.parallax.section2::before {
+  background: rgba(140, 90, 137, 0.5); /* Medium Mauve overlay */
+}
+
+.parallax.section3::before {
+  background: rgba(166, 124, 163, 0.5); /* Light Purple overlay */
+}
+
+/* Content within Parallax Sections */
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.content h1 {
+  color: #fff;
+  margin: 0;
+}
+
+/* Normal Content Sections */
+.normal-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b9b0bf;
+  color: #73496c;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.normal-content p {
+  color: #8c5a89;
+}
+
+/* Button Styles */
+button {
+  background: linear-gradient(135deg, #8c5a89, #a67ca3);
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #a67ca3, #8c5a89);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  background: linear-gradient(135deg, #8c5a89, #a67ca3);
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+  outline: 3px solid #a67ca3;
+  outline-offset: 2px;
+}
+
+/* Button Link Styles */
+.button-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #8c5a89, #a67ca3);
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-link:hover {
+  background: linear-gradient(135deg, #a67ca3, #8c5a89);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-link:active {
+  background: linear-gradient(135deg, #8c5a89, #a67ca3);
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

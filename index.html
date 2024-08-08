@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Animation</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <section class="parallax section1">
+      <div class="content">
+        <h1>Welcome to Parallax Scrolling</h1>
+      </div>
+    </section>
+    <section class="normal-content">
+      <p>Scroll down to see the effect...</p>
+      <button>Learn more</button>
+    </section>
+    <section class="parallax section2">
+      <div class="content">
+        <h1>Another Parallax Section</h1>
+      </div>
+    </section>
+    <section class="normal-content">
+      <p>More content here...</p>
+      <a href="#" class="button-link">Read more</a>
+    </section>
+    <section class="parallax section3">
+      <div class="content">
+        <h1>Yet Another Parallax Section</h1>
+      </div>
+    </section>
+    <script>
+      window.addEventListener("scroll", function () {
+        const parallaxElements = document.querySelectorAll(".parallax");
+        parallaxElements.forEach((element) => {
+          let scrollPosition = window.pageYOffset;
+          element.style.backgroundPositionY = scrollPosition * 0.5 + "px";
+        });
+      });
+    </script>
+  </body>
+</html>
