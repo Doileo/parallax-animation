@@ -36,7 +36,7 @@ This mini-project explores the parallax scrolling effect and its application.
       <img src="assets/desktop-screenshot.png" alt="Desktop view of the project" width="300"/><br>
     </td>
     <td>
-      <strong>Mobile View</strong><br>
+      <strong>Desktop view continuity</strong><br>
       <img src="assets/second-screenshot.png" alt="Second screenshot" width="300"/><br>
     </td>
   </tr>
