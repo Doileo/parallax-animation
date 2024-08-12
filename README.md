@@ -25,7 +25,7 @@ This mini-project explores the parallax scrolling effect and its application.
 ### Links
 
 - Repository: [GitHub Repo](https://github.com/Doileo/parallax-animation)
-- Live Site URL: [GitHub Pages Link]()
+- Live Site URL: [GitHub Pages Link](https://doileo.github.io/parallax-animation/)
 
 ## Screenshots
 
